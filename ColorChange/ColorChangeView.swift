@@ -9,14 +9,22 @@ import SwiftUI
 
 struct ColorChangeView: View
 {
+    @State private var backgroundColor : Color = .purple
+    
     var body: some View
     {
+        ZStack
+        {
+            backgroundColor     //changes background color with variable made in line 12
+                .edgesIgnoringSafeArea(.all)  //Ignores the top white bar
+        
         VStack
         {
             Text("It's a stack!")
         
             Text("Hello, world!")
                 .padding()
+        }
         }
     }
     
