@@ -15,17 +15,22 @@ struct ColorChangeView: View
     {
         ZStack
         {
-            backgroundColor     //changes background color with variable made in line 12
+            backgroundColor     //changes background color with state variable made in line 12
                 .edgesIgnoringSafeArea(.all)  //Ignores the top white bar
         
         VStack
         {
-            Text("It's a stack!")
+            Text("To change the color..")
         
-            Text("Hello, world!")
+            Button("Click!", action: changeBackgroundColor)
                 .padding()
         }
         }
+    }
+    
+    func changeBackgroundColor() -> Void
+    {
+        self.backgroundColor = makeRandomColor()
     }
     
     func makeRandomColor() -> Color
