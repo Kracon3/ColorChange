@@ -8,9 +8,12 @@
 import SwiftUI
 
 @main
-struct ColorChangeApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct ColorChangeApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
             ColorChangeView()
         }
     }
