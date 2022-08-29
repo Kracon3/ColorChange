@@ -18,13 +18,13 @@ struct ColorChangeView: View
             backgroundColor     //changes background color with state variable made in line 12
                 .edgesIgnoringSafeArea(.all)  //Ignores the top white bar
         
-        VStack
-        {
-            Text("To change the color..")
+            VStack
+            {
+                Text("To change the color..")
         
-            Button("Click!", action: changeBackgroundColor)
-                .padding()
-        }
+                Button("Click!", action: changeBackgroundColor)
+                    .padding()
+            }
         }
     }
     
